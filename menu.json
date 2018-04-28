@@ -1,0 +1,305 @@
+//All the menus have been written in "camelCase", like this one.
+
+//The items having two prices as half and full have been given as half and full only, and can be accessed as:  "butterChickenSlider.half/butterChickenSlider.full".
+
+//The items having single price are named as price, and so can be accessed using "vegSteamMomos.price".
+
+{
+    //The first item in the menu.
+      //NAAN TURNOVERS/SLIDERS
+          "slider":[
+           {
+        //Veg items in sliders
+            "veg":[
+             {
+              "vegMakhanwalaSlider":[
+               {
+                 "half":135,
+                 "full":199
+                }],
+              "paneerMakhanwalaSlider":[
+               {
+                 "half":135,
+                 "full":199
+                }],
+              "kadhaiPaneerSlider":[
+               {
+                 "half":135,
+                 "full":199
+                }],
+              "paneerZaikedaarSlider":[
+               {
+                 "half":135,
+                 "full":199
+                }],
+              "tawaPaneerSlider":[
+               {
+                 "half":135,
+                 "full":199
+                }],
+              "tawaMushroomSlider":[
+               {
+                 "half":135,
+                 "full":199
+                }],       
+             }] ,
+
+        //Non-veg items in sliders
+            "nonVeg":[
+             {
+              "butterChickenSlider":[
+               {
+                 "half":135,
+                 "full":199
+                }],
+              "chickenTikkaMasalaSlider":[
+               {
+                 "half":135,
+                 "full":199
+                }],
+              "chickenBhunnaSlider":[
+               {
+                 "half":135,
+                 "full":199
+                }],
+              "chickenKadhaiSlider":[
+               {
+                 "half":135,
+                 "full":199
+                }],
+              "chickenBaghdadiSlider":[
+               {
+                 "half":135,
+                 "full":199
+                }],
+              "muttonBhunnaSlider":
+               {
+                 "price":250
+                },       
+             }],
+         }],
+
+        //The second set of items in the menu list *ROLL*.
+        "roll":[ 
+           {
+
+            "veg":[
+             {
+              "paneerMakhanwalaRoll":[
+               {
+                 "price":150
+                }],
+              "paneerZaikedaarRoll":[
+               {
+                 "price":150
+                }],
+              "paneerTikkaRoll":[
+               {
+                 "price":150
+                }],
+              "tandooriAalooRoll":[
+               {
+                 "price":120
+                }],
+              "tawaMushroomRoll":[
+               {
+                 "price":150
+                }],       
+             }],
+
+        //Non-veg items in the roll menu.
+            "nonVeg":[
+             {
+              "butterChickenRoll":[
+               {
+                "price":150
+                }],
+              "chickenTikkaRoll":[
+               {
+                 "price":150
+                }],
+              "chickenBhunnaRoll":[
+               {
+                 "price":150
+                }],
+              "chickenZaikedaarRoll":[
+               {
+                 "price":150
+                }],      
+             }],
+           }],
+
+        //Third item in the menu list *MOMOS*.
+        "momos":[ 
+           {
+        //All about veg momos.    
+            "veg":[
+             {
+              "vegSteamMomos":[
+               {
+                 "price":110
+                }],
+              "vegTandooriMomos":[
+               {
+                 "price":125
+                }],
+              "vegSchezwanMomos":[
+               {
+                 "price":135
+                }],      
+             }],
+
+        //Non-veg items in the momos menu.
+            "nonVeg":[
+             {
+              "chickenSteamMomos":[
+               {
+                "price":110
+                }],
+              "chickenTandooriMomos":[
+               {
+                 "price":125
+                }],
+              "chickenSchezwanMomos":[
+               {
+                 "price":135
+                }],     
+             }],
+           }],
+
+        //Fourth item in the menu list *STARTERS TANDOORI SPECIAL*   
+        "starters":[ 
+           {
+        //All about veg momos.    
+            "veg":[
+             {
+              "tandooriAaloo":[
+               {
+                 "price":150
+                }],
+              "tandooriMushroom":[
+               {
+                 "price":180
+                }],
+              "vegSheekhKebab":[
+               {
+                 "price":220
+                }], 
+              "afghaniMushrooms":[
+               {
+                 "price":220
+                }],
+              "achariPaneerTikka":[
+               {
+                 "price":229
+                }],
+              "lahoriPaneerTikka":[
+               {
+                 "price":229
+                }],
+              "paneerRoulade":[
+               {
+                 "price":280
+                }],
+              "paneerChutneywalaTikka":[
+               {
+                 "price":239
+                }], 
+              "paneerSufianaTikka":[
+               {
+                 "price":239
+                }],
+              "babyCornAmritsari":[
+               {
+                 "price":229
+                }],
+              "pahadiPaneerTikka":[
+               {
+                 "price":239
+                }],          
+             }],
+
+        //Non-veg items in the momos menu.
+            "nonVeg":[
+             {
+              "chickenLahoriTikka":[
+               {
+                "price":229
+                }],
+              "chickenReshmiTikka":[
+               {
+                 "price":229
+                }],
+              "chickenMalaiTikka":[
+               {
+                 "price":239
+                }],
+              "tandooriChicken":[
+               {
+                "half":199,
+                "full":299
+                }],
+              "chickenTandooriMomos":[
+               {
+                 "price":125
+                }],
+              "chickenTikkaAngara":[
+               {
+                 "price":229
+                }],     
+              "chickenLasooniKebab":[
+               {
+                "price":229
+                }],
+              "drumsOfHeavenKebab":[
+               {
+                 "price":250
+                }],
+              "chickenShammiKebab":[
+               {
+                 "price":229
+                }],     
+              "chickenGilafiSheekh":[
+               {
+                "price":239
+                }],
+              "chickenPahadiTikka":[
+               {
+                 "price":239
+                }],
+              "muttonSheekhKebab":[
+               {
+                 "price":259
+                }],     
+              "rampurMuttonSheekh":[
+               {
+                "price":359
+                }],
+              "mouthMeltingGhoshtShammiKebab":[
+               {
+                 "price":349
+                }],
+              "lukhnowLambGolatiWithShirmaliRoti":[
+               {
+                 "price":429
+                }],       
+              "fishAmritsariTikka":[
+               {
+                "price":259
+                }],
+              "kalimiriPrawns":[
+               {
+                 "price":529
+                }],     
+              "tandooriGarlicPrawns":[
+               {
+                "price":529
+                }],
+              "hariyaliFreshFishTikka":[
+               {
+                 "price":329
+                }],              
+             }],
+           }],    
+
+        }
