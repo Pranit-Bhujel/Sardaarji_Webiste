@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>JSON MENU</p>
+
+<h1 id="demo"></h1>
+<h1 id="demo2"></h1>
+
+<script>
+
+//All the menus have been written in "camelCase", like this one.
+
+//The items having two prices as half and full have been given as half and full only, and can be accessed as:  "butterChickenSlider.half/butterChickenSlider.full".
+
+//The items having single price are named as price, and so can be accessed using "vegSteamMomos.price".
+
+//The items which were offered in Bone/Boneless has been named as their names followed by bone/boneless.
+
+menu = {
+        //NAAN TURNOVERS/SLIDERS
+          "slider":
+           {
+        //Veg items in sliders
+            "veg":
+             {
+              "vegMakhanwalaSliderHalf":135,
+              "vegMakhanwalaSliderFull":199,
+              "paneerMakhanwalaSliderHalf":135,
+              "paneerMakhanwalaSliderFull":199,
+              "kadhaiPaneerSliderHalf":135,
+              "kadhaiPaneerSliderFull":199,
+              "paneerZaikedaarSliderHalf":135,
+              "paneerZaikedaarSliderFull":199,
+              "tawaPaneerSliderHalf":135,
+              "tawaPaneerSliderFull":199,
+              "tawaMushroomSliderHalf":135,
+              "tawaMushroomSliderHalf":199,       
+             },
+
+        //Non-veg items in sliders
+            "nonVeg":
+             {
+              "butterChickenSliderHalf":135,
+              "butterChickenSliderFull":199,
+              "chickenTikkaMasalaSliderHalf":135,
+              "chickenTikkaMasalaSliderFull":199,
+              "chickenBhunnaSliderHalf":135,
+              "chickenBhunnaSliderFull":199,
+              "chickenKadhaiSliderHalf":135,
+              "chickenKadhaiSliderFull":199,
+              "chickenBaghdadiSliderHalf":135,
+              "chickenBaghdadiSliderFull":199,
+              "muttonBhunnaSlider":250      
+             },
+           },
+
+        //*ROLL*.
+        "roll":
+           {
+        //Veg items in the roll menu.    
+            "veg":
+             {
+              "paneerMakhanwalaRoll":150,
+              "paneerZaikedaarRoll":150,
+              "paneerTikkaRoll":150,
+              "tandooriAalooRoll":120,
+              "tawaMushroomRoll":150      
+             },
+
+        //Non-veg items in the roll menu.
+            "nonVeg":
+             {
+              "butterChickenRoll":150,
+              "chickenTikkaRoll":150,
+              "chickenBhunnaRoll":150,
+              "chickenZaikedaarRoll":150   
+             }
+           },
+
+        //*MOMOS*.
+        "momos":
+           {
+        //All about veg momos.    
+            "veg":
+             {
+              "vegSteamMomos":110,
+              "vegTandooriMomos":125,
+              "vegSchezwanMomos":135     
+             },
+
+        //Non-veg items in the momos menu.
+            "nonVeg":
+             {
+              "chickenSteamMomos":110,
+              "chickenTandooriMomos":125,
+              "chickenSchezwanMomos":135
+             },
+           },
+
+        //*STARTERS TANDOORI SPECIAL*   
+        "starters": 
+           {
+        //All about veg items.    
+            "veg":
+             {
+              "tandooriAaloo":150,
+              "tandooriMushroom":180,
+              "vegSheekhKebab":220,
+              "afghaniMushrooms":220,
+              "achariPaneerTikka":229,
+              "lahoriPaneerTikka":229,
+              "paneerRoulade":280,
+              "paneerChutneywalaTikka":239,
+              "paneerSufianaTikka":239,
+              "babyCornAmritsari":229,
+              "pahadiPaneerTikka":239         
+             },
+
+        //Non-veg items in the starters list.
+            "nonVeg":
+             {
+              "chickenLahoriTikka":229,
+              "chickenReshmiTikka":229,
+              "chickenMalaiTikka":239,
+              "tandooriChickenHalf":199,
+              "tandooriChickenFull":299,
+              "chickenTandooriMomos":125,
+              "chickenTikkaAngara":229,  
+              "chickenLasooniKebab":229,
+              "drumsOfHeavenKebab":250,
+              "chickenShammiKebab":229,     
+              "chickenGilafiSheekh":239,
+              "chickenPahadiTikka":239,
+              "muttonSheekhKebab":259,     
+              "rampurMuttonSheekh":359,
+              "mouthMeltingGhoshtShammiKebab":349,
+              "lukhnowLambGolatiWithShirmaliRoti":429,
+              "fishAmritsariTikka":259,
+              "kalimiriPrawns":529,
+              "tandooriGarlicPrawns":529,
+              "hariyaliFreshFishTikka":329,           
+             },
+           },
+
+        //*GRAVY*.
+        "gravy":
+           {
+        //All about veg gravy items.    
+            "veg":
+             {
+              "vegMakhanwala":180,
+              "paneerMakhanwala":220,
+              "tandooriPaneerTikkaKhadaMasala":239,
+              "daal":175,
+              "vegKadhai":220,
+              "paneerKadhai":239,
+              "paneerTikkaMasala":229,
+              "paneerBaghdadi":229,
+              "mushroomDoPyaza":239,
+              "tandooriAalooMasala":189,
+              "tawaMushroomgravy":239,
+              "vegKolhapuri":229,
+              "burntGarlicPalakPaneer":239,
+              "babyCornMushroomMasala":229,
+              "adrakiAaloo":195,  
+             },
+
+        //Non-veg items in the gravy menu.
+            "nonVeg":
+             {
+              "butterChickenBoneless":249,
+              "shreddedChicken":249,
+              "chickenBunnaGravyBoneless":249,
+              "chickenTikkaMasalaBoneless":249,  
+              "chickenKadhaiGravyBone":229,
+              "chickenKadhaiGravyBoneless":249,
+              "chickenNawabiBoneless":259,
+              "chickenBaghdadiGravyBone":229,
+              "chickenBaghdadiGravyBoneless":249,  
+              "roghaniChickenTangadi":279,
+              "nimbuChickenBoneless":259,
+              "chickenMughlaiBone":239,
+              "chickenMughlaiBoneless":259,
+              "chickenPeshawariBoneless":259,
+              "goshtKhadeMasala":320,
+              "methiMutton":320,
+              "muttonInChoice":320,         
+             },
+           }, 
+
+        //Sixth item in the menu list *FISH/PRAWNS*.
+        "fish":
+           {
+        //All about fishes and prawns. 
+            "nonVeg":
+             {
+              "fishInChoice":270
+              "prawnsInChoice":449 
+             },
+           },     
+
+        //Seventh item in the menu list *BIRYANI*.
+        "biryani":
+           {
+        //All about veg biryani.    
+            "veg":
+             {
+              "vegBiryani":199,
+              "vegDumBiryani":219,
+              "paneerTikkaBiryani":229,
+              "hyderabadiVegBiryani":229,
+              "tawaPulao":195,
+              "jeeraRice":120,
+              "steamedBasmatiRice":99       
+             },
+
+        //Non-veg items in the biryani menu.
+            "nonVeg":
+             {
+              "chickenDumBiryaniBone":229,
+               {
+              "chickenDumBiryaniBoneless":249,
+              "butterChickenBiryaniBoneless":249,
+              "hyderabadiBiryaniBone":229,
+              "hyderabadiBiryaniBoneless":249,
+              "chickenTawaPulaoBoneless":199,
+              "muttonBiryani":295,
+              "prawnsBiryani":349  
+             },
+           }, 
+
+        //Eighth item in the menu list *ROTIS/NAAN*.
+        "roti":
+           {
+        //All about rotis.    
+            "tandooriRotiPlain":25,
+            "tandooriRotiButter":35,
+            "plainParatha":40,
+            "lachchaParatha":50,
+            "aalooParatha":90,
+            "paneerParatha":90,
+            "cheeseParatha":60,
+            "naanPlain":30,
+            "naanButter":35,
+            "naanCheese":60,
+            "naanGarlic":50,
+            "kulcha":50,
+            "raitha":79,
+            "extraRaitha":25
+            },
+
+        "sweets":
+           {    
+            "gulabJamun":59,
+            },
+
+        "drinks":
+           {    
+            "colddrink":49,
+            "water":20
+            }
+     } 
+     //Finished menu item.
+var x = "", y = "", i = 0;
+var m = menu.slider.veg;
+for (i in m)
+    {
+        x += m[i].half + "<br>";
+        y += m[i].full + "<br>";
+    }
+document.getElementById("demo").innerHTML = x;
+document.getElementById("demo2").innerHTML = y;
+</script>
+
+</body>
+</html>
