@@ -6,17 +6,53 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/sidenav.css" />
+    <link rel="stylesheet" href="css/maps.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 </head>
 
 <body>
+    <div class="map-modal">
+        <button class="closemap">Close</button>
+        <div class="map-container">
+
+        </div>
+    </div>
+    <nav class="sidenav">
+        <ul>
+            <li>
+                <a href="./about.html"><img src="./images/abouticon.png" />About us</a>
+            </li>
+            <li>
+                <a href="./index.html#branches"><img src="./images/branchesicon.png" />Branches</a>
+            </li>
+            <li>
+                <a href="./menu.html"><img src="./images/foodmenuicon.png" />Food menu</a>
+            </li>
+            <li>
+                <a href="./gallery.html"><img src="./images/galleryicon.png" />Gallery</a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/orderfoodicon.png" />Order food</a>
+            </li>
+            <li>
+                <a href="./franchize.html"><img src="./images/franchizeicon.png" />Franchize</a>
+            </li>
+            <li>
+                <a href="./about.html#contact"> <img src="./images/contacticon.png" />Contact us</a>
+            </li>
+        </ul>
+    </nav>
     <header class="nav-bar">
-        <a href="#">
+        <a href="index.html">
             <img src="images/logo.png" alt="Sardaarji logo" />
-            <span>Sardaarji</span>
+            <span>Sardaarji<sup style="font-size:small;opacity: 0.4;">TM</sup> </span>
         </a>
 
-        <span class="icon-menu">☰</span>
+        <span class="icon-menu icon-menu-open">☰</span>
     </header>
 
     <section class="intro-container">
@@ -29,804 +65,145 @@
             <br />
             <span style="font-size: small;">(Authentic Punjabi "Food on the Go")</span>
             <br />
-
-            <div class="swiper-container testimonials-container">
-                <h>What our customers say</h>
-                <div class="swiper-wrapper ">
-                    <div class="swiper-slide testimonial">
-                        <blockquote>
-                            The food is worth tasting. The staff insures everything is up to the mark. The name is totally worth the hype.
-                        </blockquote>
-                    </div>
-                    <div class="swiper-slide testimonial">
-                        <blockquote>
-                            Amazing restaurant. Gets your taste buds buzzing. Highly recommended
-                        </blockquote>
-
-                    </div>
-                    <div class="swiper-slide testimonial">
-                        <blockquote>
-                            They have lots of variety with reasonable rates, remarkable quality and quantity.
-                        </blockquote>
-                    </div>
-                    <div class="swiper-slide testimonial">
-                        <blockquote>
-                            Speedy delivery and good taste. Seating arrangements are pretty cool.
-                        </blockquote>
-                    </div>
-
-                    <div class="swiper-slide testimonial">
-                        <blockquote>
-                            Always has to be my go to place. The food gives you 100% value of money.
-                        </blockquote>
-                    </div>
-                    <div class="swiper-slide testimonial">
-                        <blockquote>
-                            Authentic punjabi food , Delicious, Would love to visit this place again.
-                        </blockquote>
-                    </div>
+        </div>
+        <div class="intro-links">
+            <a href="#">Order food</a>
+        </div>
+        <div class="swiper-container testimonials-container">
+            <h>What our customers say</h>
+            <div class="swiper-wrapper ">
+                <div class="swiper-slide testimonial">
+                    <blockquote>
+                        The food is worth tasting. The staff insures everything is up to the mark. The name is totally worth the hype.
+                    </blockquote>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="intro-links">
-                <a href="#">Order food</a>
-            </div>
+                <div class="swiper-slide testimonial">
+                    <blockquote>
+                        Amazing restaurant. Gets your taste buds buzzing. Highly recommended
+                    </blockquote>
 
+                </div>
+                <div class="swiper-slide testimonial">
+                    <blockquote>
+                        They have lots of variety with reasonable rates, remarkable quality and quantity.
+                    </blockquote>
+                </div>
+                <div class="swiper-slide testimonial">
+                    <blockquote>
+                        Speedy delivery and good taste. Seating arrangements are pretty cool.
+                    </blockquote>
+                </div>
+
+                <div class="swiper-slide testimonial">
+                    <blockquote>
+                        Always has to be my go to place. The food gives you 100% value of money.
+                    </blockquote>
+                </div>
+                <div class="swiper-slide testimonial">
+                    <blockquote>
+                        Authentic punjabi food , Delicious, Would love to visit this place again.
+                    </blockquote>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
-    <section class="branches-container responsive-container">
-        <h class="branches-title">Branches</h>
-        <div class="swiper-container branches-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="branch-title">
-                        <h>Sardaarji</h>
-                        <p>(Andheri Lokhandwala)</p>
-                    </div>
-                    <div class="branch-description">
-                        <h>Address</h>
-                        <address>
+    <section class="parallax bg1">
+    </section>
+
+    <section class="branches-wrapper">
+        <section class="branches-container responsive-container">
+            <img class="icon" src="./images/branchesicon.png" />
+            <h class="branches-title"> Branches</h>
+            <div class="swiper-container branches-swiper" id="branches">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="branch-title">
+                            <h>Andheri Lokhandwala</h>
+                            <div class="widget_wrap" style="width:auto;height:auto;">
+                                <a href="https://www.zomato.com/mumbai/sardaarji-andheri-lokhandwala?utm_source=referral-widget-18587875&utm_medium=review_badge&utm_campaign=widget-business" target="_newtab"><img src="https://www.zomato.com/widgets/review_badge?badge_type=rating_large&res_id=18587875&widget_lang=en"></a>
+                            </div>
+                        </div>
+                        <div class="branch-description">
+                            <h>Address</h>
+
+                            <address>
                                 Shop 6, Sab TV Lane,
                                 Next to Pishu's,
                                 Andheri Lokhandwala,
                                 Andheri West 
                         </address>
-                        <button>View on Map</button>
-                        <h>Phone number</h>
-                        <a href="tel:+918655532999">+91 8655532999</a>
-                        <a href="tel:+918655534999">+91 8655534999</a>
+                            <button class="mapbtn" data-map-name="andheri">View on Map</button>
+                            <h>Phone number</h>
+                            <a href="tel:+918655532999">+91 8655532999</a>
+                            <a href="tel:+918655534999">+91 8655534999</a>
 
+
+                        </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="branch-title">
-                        <h>Sardaarji</h>
-                        <p>(Juhu)</p>
-                    </div>
-                    <div class="branch-description">
-                        <h>Address</h>
-                        <address>
+                    <div class="swiper-slide">
+                        <div class="branch-title">
+                            <h>Juhu</h>
+                            <div class="widget_wrap" style="width:auto;height:auto;">
+                                <a href="https://www.zomato.com/mumbai/sardaarji-juhu?utm_source=referral-widget-18447027&utm_medium=review_badge&utm_campaign=widget-business" target="_newtab"><img src="https://www.zomato.com/widgets/review_badge?badge_type=rating_large&res_id=18447027&widget_lang=en"></a>
+                            </div>
+                        </div>
+                        <div class="branch-description">
+                            <h>Address</h>
+                            <address>
                                 Shop 14, 
                                 Juhu Ekta CHS,
                                  Next to Mohan Medical, 
                                  Juhu Versova Link Road,
                                  Juhu, Mumbai 
                             </address>
-                        <button>View on Map</button>
-                        <h>Phone number</h>
-                        <a href="tel:+918655521999">+91 8655521999</a>
-                        <a href="tel:+918655531999">+91 8655531999</a>
+                            <button class="mapbtn" data-map-name="juhu">View on Map</button>
+                            <h>Phone number</h>
+                            <a href="tel:+918655521999">+91 8655521999</a>
+                            <a href="tel:+918655531999">+91 8655531999</a>
+
+                        </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="branch-title">
-                        <h>Sardaarji</h>
-                        <p>(Bandra west)</p>
-                    </div>
-                    <div class="branch-description">
-                        <h>Address</h>
-                        <address>
+                    <div class="swiper-slide">
+                        <div class="branch-title">
+                            <h>Bandra west</h>
+                            <div class="widget_wrap" style="width:auto;height:auto;">
+                                <a href="https://www.zomato.com/mumbai/sardaarji-pali-hill-bandra-west?utm_source=referral-widget-18604895&utm_medium=review_badge&utm_campaign=widget-business" target="_newtab"><img src="https://www.zomato.com/widgets/review_badge?badge_type=rating_large&res_id=18604895&widget_lang=en"></a>
+                            </div>
+                        </div>
+                        <div class="branch-description">
+                            <h>Address</h>
+                            <address>
                                     160/A, 29th Road,
                                     Mel Milap,
                                     Abbas Compound,
                                     T.P.S. 3, Near Grand Residency, 
                                     Bandra west, M-400050
                         </address>
-                        <button>View on Map</button>
-                        <h>Phone number</h>
-                        <a href="tel:022 30151206">022 30151206</a>
+                            <button class="mapbtn" data-map-name="bandra">View on Map</button>
+                            <h>Phone number</h>
+                            <a href="tel:022 30151206">022 30151206</a>
+                        </div>
                     </div>
+
                 </div>
 
-            </div>
-            <div class="swiper-button-next swiper-button-black"></div>
-            <div class="swiper-button-prev swiper-button-black"></div>
 
-        </div>
+            </div>
+        </section>
     </section>
-    <section class="parallax">
+    
+    <section class="parallax bg2">
     </section>
 
-    <section class="foodmenu-container responsive-container">
-        <h class="foodmenu-title">Menu</h>
-        <div class="swiper-container foodmenu-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide tablinks" data-tab-content-id="starters"> Starters </div>
-                <div class="swiper-slide tablinks" data-tab-content-id="biryani"> Biryani </div>
-                <div class="swiper-slide tablinks" data-tab-content-id="rotis"> Rotis / Naan</div>
-                <div class="swiper-slide tablinks" data-tab-content-id="rolls">Rolls </div>
-                <div class="swiper-slide tablinks" data-tab-content-id="momos"> Momos</div>
-                <div class="swiper-slide tablinks" data-tab-content-id="sliders">Sliders </div>
-                <div class="swiper-slide tablinks" data-tab-content-id="maingravy"> Main Course (Gravy) </div>
-                <div class="swiper-slide tablinks" data-tab-content-id="fish"> Fish / Prawns (Gravy) </div>
-                <div class="swiper-slide tablinks" data-tab-content-id="sweets"> Sweets</div>
-                <div class="swiper-slide tablinks" data-tab-content-id="drinks">Drinks</div>
-            </div>
-        </div>
-        <div class="tabcontent" data-tab-id="starters">
-            <div class="heading">
-                <h>Starters (Tandoor Speciality)</h>
-            </div>
-            <div class="innertab">
-                <div class="innertablinks" data-innertab-content-id="startersv">Veg</div>
-                <div class="innertablinks" data-innertab-content-id="startersn">Non Veg</div>
-            </div>
-            <div class="innertabcontent" data-innertab-id="startersv">
-                <table>
-                    <tr>
-                        <th>ITEM</th>
-                        <th>PRICE</th>
-                    </tr>
-                    <tr>
-                        <td>Tandoori Aaloo</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <td>Tandoori Mushroom</td>
-                        <td>180</td>
-                    </tr>
-                    <tr>
-                        <td>Veg Sheekh Kebab</td>
-                        <td>220</td>
-                    </tr>
-                    <tr>
-                        <td>Afghani Mushrooms</td>
-                        <td>220</td>
-                    </tr>
-                    <tr>
-                        <td>Achari Paneer Tikka</td>
-                        <td>229</td>
-                    </tr>
-                    <tr>
-                        <td>Lahori Paneer Tikka</td>
-                        <td>229</td>
-                    </tr>
-                    <tr>
-                        <td>Paneer Roulade</td>
-                        <td>280</td>
-                    </tr>
-                    <tr>
-                        <td>Paneer Chutneywala Tikka</td>
-                        <td>239</td>
-                    </tr>
-                    <tr>
-                        <td>Paneer Sufiana Tikka</td>
-                        <td>239</td>
-                    </tr>
-                    <tr>
-                        <td>Baby Corn Amritsari</td>
-                        <td>229</td>
-                    </tr>
-                    <tr>
-                        <td>Pahadi PaneerTikka</td>
-                        <td>239</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="innertabcontent" data-innertab-id="startersn">
-                <table>
-                    <tr>
-                        <th>ITEM</th>
-                        <th>PRICE (Half / Full) </th>
-                    </tr>
-                    <tr>
-                        <td>Chicken Lahori Tikka</td>
-                        <td>229</td>
-                    </tr>
-                    <tr>
-                        <td>Chicken Reshmi Tikka</td>
-                        <td>229</td>
-                    </tr>
-                    <tr>
-                        <td>Chicken Malai Tikka</td>
-                        <td>239</td>
-                    </tr>
-                    <tr>
-                        <td>Murg Kalimiri Kebab</td>
-                        <td>229</td>
-                    </tr>
-                    <tr>
-                        <td>Tandoori Chicken<br /> (Classic / Achari / Pahadi / Kalimiri)</td>
-                        <td>
-                            199 / 299
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Chicken Tikka Angara</td>
-                        <td>229</td>
-                    </tr>
-                    <tr>
-                        <td>Chicken Lasooni Kebab</td>
-                        <td>229</td>
-                    </tr>
-                    <tr>
-                        <td>Drums of Heaven Kebab</td>
-                        <td>250</td>
-                    </tr>
-                    <tr>
-                        <td>Chicken Shammi Kebab</td>
-                        <td>229</td>
-                    </tr>
-                    <tr>
-                        <td>Chicken Gilafi Sheekh</td>
-                        <td>239</td>
-                    </tr>
-                    <tr>
-                        <td>Mutton Sheekh Kebab</td>
-                        <td>259</td>
-                    </tr>
-                    <tr>
-                        <td>Rampur Mutton Sheekh</td>
-                        <td>359</td>
-                    </tr>
-                    <tr>
-                        <td>Mouth Melting Ghosht Shammi Kebab</td>
-                        <td>349</td>
-                    </tr>
-                    <tr>
-                        <td>Lucknow Lamb Golati With Shirmali Roti</td>
-                        <td>429</td>
-                    </tr>
-                    <tr>
-                        <td>Fish Amritsari Tikka</td>
-                        <td>259</td>
-                    </tr>
-                    <tr>
-                        <td>Kalimiri Prawns</td>
-                        <td>529</td>
-                    </tr>
-                    <tr>
-                        <td>Tandoori Garlic Prawns</td>
-                        <td>529</td>
-                    </tr>
-                    <tr>
-                        <td>Hariyali Fresh Fish Tikka</td>
-                        <td>329</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="tabcontent" data-tab-id="momos">
-            <div class="heading">
-                <h>MOMOS</h>
-            </div>
-            <div class="innertab">
-                <div class="innertablinks" data-innertab-content-id="momosv">Veg</div>
-                <div class="innertablinks" data-innertab-content-id="momosn">Non Veg</div>
-            </div>
-            <div class="innertabcontent" data-innertab-id="momosv">
-                <table>
-                    <tr>
-                        <th>ITEM</th>
-                        <th>PRICE</th>
-                    </tr>
-                    <tr>
-                        <td>Veg Steam Momos</td>
-                        <td>110</td>
-                    </tr>
-                    <tr>
-                        <td>Veg Tandoori Momos</td>
-                        <td>125</td>
-                    </tr>
-                    <tr>
-                        <td>Veg Schezwan Momos</td>
-                        <td>135</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="innertabcontent" data-innertab-id="momosn">
-                <table>
-                    <tr>
-                        <th>ITEM</th>
-                        <th>PRICE</th>
-                    </tr>
-                    <tr>
-                        <td>Chicken Steam Momos</td>
-                        <td>110</td>
-                    </tr>
-                    <tr>
-                        <td>Chicken Tandoori Momos</td>
-                        <td>125</td>
-                    </tr>
-                    <tr>
-                        <td>Chicken Schezwan Momos</td>
-                        <td>135</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="tabcontent" data-tab-id="biryani">
-            <div class="heading">
-                <h>Biryani </h>
-            </div>
-            <div class="innertab">
-                <div class="innertablinks" data-innertab-content-id="biryaniv">Veg</div>
-                <div class="innertablinks" data-innertab-content-id="biryanin">Non Veg</div>
-            </div>
-            <div class="innertabcontent" data-innertab-id="biryaniv">
-                <table>
-                    <tr>
-                        <th>ITEM</th>
-                        <th>PRICE</th>
-                    </tr>
-                    <tr>
-                        <td>Veg Biryani</td>
-                        <td>199</td>
-                    </tr>
-                    <tr>
-                        <td>Veg Dum Biryani</td>
-                        <td>219</td>
-                    </tr>
-                    <tr>
-                        <td>Paneer Tikka Biryani</td>
-                        <td>229</td>
-                    </tr>
-                    <tr>
-                        <td>Hyderabadi Veg Biryani</td>
-                        <td>229</td>
-                    </tr>
-                    <tr>
-                        <td>Tawa Pulao</td>
-                        <td>195</td>
-                    </tr>
-                    <tr>
-                        <td>Jeera Rice</td>
-                        <td>120</td>
-                    </tr>
-                    <tr>
-                        <td>Steamed Basmati Rice</td>
-                        <td>99</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="innertabcontent" data-innertab-id="biryanin">
-                <table>
-                    <tr>
-                        <th>ITEM</th>
-                        <th>PRICE (Half / Full)</th>
-                    </tr>
-                    <tr>
-                        <td>Chicken Dum Biryani <br />(Bone / Boneless)</td>
-                        <td>229 / 249</td>
-                    </tr>
-                    <tr>
-                        <td>Butter Chickem Biryani <br />(Boneless) </td>
-                        <td>249</td>
-                    </tr>
-                    <tr>
-                        <td>Hyderabadi Biryani<br />(Bone / Boneless)</td>
-                        <td>229 / 249</td>
-                    </tr>
-                    <tr>
-                        <td>Chicken Tawa Pulao <br />(Boneless)</td>
-                        <td>199</td>
-                    </tr>
-                    <tr>
-                        <td>Mutton Biryani</td>
-                        <td>295</td>
-                    </tr>
-                    <tr>
-                        <td>Prawns Biryani <br />(6 Pcs.)</td>
-                        <td>349</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="tabcontent" data-tab-id="rotis">
-            <div class="heading">
-                <h>Rotis / Naan</h>
-            </div>
-            <table>
-                <tr>
-                    <th>ITEM</th>
-                    <th>PRICE</th>
-                </tr>
-                <tr>
-                    <td>Tandoori Roti Plain</td>
-                    <td>25</td>
-                </tr>
-                <tr>
-                    <td>Tandoori Roti Butter</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>Plain Paratha</td>
-                    <td>40</td>
-                </tr>
-                <tr>
-                    <td>Lachcha Paratha</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Aaloo Paratha</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>Paneer Paratha</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>Cheese Paratha</td>
-                    <td>60</td>
-                </tr>
-                <tr>
-                    <td>Naan Plain</td>
-                    <td>30</td>
-                </tr>
-                <tr>
-                    <td>Naan Butter</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>Naan Cheese</td>
-                    <td>60</td>
-                </tr>
-                <tr>
-                    <td>Naan Garlic</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Kulcha</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Raitha</td>
-                    <td>79</td>
-                </tr>
-                <tr>
-                    <td>Extra Raitha</td>
-                    <td>25</td>
-                </tr>
-            </table>
-        </div>
-        <div class="tabcontent" data-tab-id="sweets">
-            <div class="heading">
-                <h>Sweets</h>
-            </div>
-            <table>
-                <tr>
-                    <th>ITEM</th>
-                    <th>PRICE</th>
-                </tr>
-                <tr>
-                    <td>Gulab Jamun</td>
-                    <td>59</td>
-                </tr>
-            </table>
-        </div>
-        <div class="tabcontent" data-tab-id="drinks">
-            <div class="heading">
-                <h>Drinks</h>
-            </div>
-            <table>
-                <tr>
-                    <th>ITEM</th>
-                    <th>PRICE</th>
-                </tr>
-                <tr>
-                    <td>Cold Drink <br /> (Thumbs up / Sprite / Coke)</td>
-                    <td>49</td>
-                </tr>
-                <tr>
-                    <td>Water <br />(1 litre)</td>
-                    <td>20</td>
-                </tr>
-            </table>
-        </div>
-        <div class="tabcontent" data-tab-id="sliders">
-            <div class="heading">
-                <h>Sliders / Naan Turnovers</h>
-            </div>
-            <div class="innertab">
-                <div class="innertablinks" data-innertab-content-id="slidersv">Veg</div>
-                <div class="innertablinks" data-innertab-content-id="slidersn">Non Veg</div>
-            </div>
-            <div class="innertabcontent" data-innertab-id="slidersv">
-                <table>
-                    <tr>
-                        <th>ITEM</th>
-                        <th>PRICE (Half / Full)</th>
-                    </tr>
-                    <tr>
-                <td>Veg Makhanwala Slider</td>
-                    <td>135 / 199</td>
-                </tr>
-                <tr>
-                    <td>Paneer Makhanwala Slider</td>
-                    <td>135 / 199</td>
-                </tr>
-                <tr>
-                    <td>Kadhai Paneer Slider</td>
-                    <td>135 / 199</td>
-                </tr>
-                <tr>
-                    <td>Paneer Zaikedaar Slider</td>
-                    <td>135 / 199</td>
-                </tr>
-                <tr>
-                    <td>Tawa Paneer Slider</td>
-                    <td>135 / 199</td>
-                </tr>
-                <tr>
-                    <td>Tawa Mushroom Slider</td>
-                    <td>135 / 199</td>
-                </tr>
-                </table>
-            </div>
-            <div class="innertabcontent" data-innertab-id="slidersn">
-                <table>
-                    <tr>
-                        <th>ITEM</th>
-                        <th>PRICE (Half / Full)</th>
-                    </tr>
-                <tr>
-                    <td>Butter Chicken Slider</td>
-                    <td>135 / 199</td>
-                </tr>
-                <tr>
-                    <td>Chicken Tikka Masala Slider</td>
-                    <td>135 / 199</td>
-                </tr>
-                <tr>
-                    <td>Chicken Bhunna Slider</td>
-                    <td>135 / 199</td>
-                </tr>
-                <tr>
-                    <td>Chicken Kadhai Slider</td>
-                    <td>135 / 199</td>
-                </tr>
-                <tr>
-                    <td>Chicken Baghdadi Slider</td>
-                    <td>135 / 199</td>
-                </tr>
-                <tr>
-                    <td>Mutton Bhunna Slider</td>
-                    <td>250</td>
-                </tr>
-                </table>
-            </div>
-        </div>
-        <div class="tabcontent" data-tab-id="rolls">
-            <div class="heading">
-                <h>Rolls</h>
-            </div>
-            <div class="innertab">
-                <div class="innertablinks" data-innertab-content-id="rollsv">Veg</div>
-                <div class="innertablinks" data-innertab-content-id="rollsn">Non Veg</div>
-            </div>
-            <div class="innertabcontent" data-innertab-id="rollsv">
-                <table>
-                    <tr>
-                        <th>ITEM</th>
-                        <th>PRICE </th>
-                    </tr>
-                    <tr>
-                        <td>Paneer Makhanwala Roll</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <td>Paneer Zaikedaar Roll</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <td>Paneer Tikka Roll</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <td>Tandoori Aaloo Roll</td>
-                        <td>120</td>
-                    </tr>
-                    <tr>
-                        <td>Tawa Mushroom Roll</td>
-                        <td>150</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="innertabcontent" data-innertab-id="rollsn">
-                <table>
-                    <tr>
-                        <th>ITEM</th>
-                        <th>PRICE</th>
-                    </tr>
-                    <tr>
-                        <td>Butter Chicken Roll</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <td>Chicken Tikka Roll</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <td>Chicken Bhunna Roll</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <td>Chicken Zaikedaar Roll</td>
-                        <td>150</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="tabcontent" data-tab-id="maingravy">
-            <div class="heading">
-                <h>Main Course (Gravy)</h>
-            </div>
-            <div class="innertab">
-                <div class="innertablinks" data-innertab-content-id="maingravyv">Veg</div>
-                <div class="innertablinks" data-innertab-content-id="maingravyn">Non Veg</div>
-            </div>
-            <div class="innertabcontent" data-innertab-id="maingravyv">
-                <table>
-                    <tr>
-                        <th>ITEM</th>
-                        <th>PRICE </th>
-                    </tr>
-                    <tr>
-                        <td>Veg Makhanwala</td>
-                        <td>180</td>
-                    </tr>
-                    <tr>
-                        <td>Paneer Makhanwala</td>
-                        <td>220</td>
-                    </tr>
-                    <tr>
-                        <td>Tandoori Paneer Tikka Khada Masala</td>
-                        <td>239</td>
-                    </tr>
-                    <tr>
-                        <td>Daal<br />(Tadka / Fry / Makhani)</td>
-                        <td>175</td>
-                    </tr>
-                    <tr>
-                        <td>Veg Kadhai</td>
-                        <td>220</td>
-                    </tr>
-                    <tr>
-                        <td>Paneer Kadhai</td>
-                        <td>239</td>
-                    </tr>
-                    <tr>
-                        <td>Paneer Tikka Masala</td>
-                        <td>229</td>
-                    </tr>
-                    <tr>
-                        <td>Paneer Baghdadi</td>
-                        <td>229</td>
-                    </tr>
-                    <tr>
-                        <td>Mushroom Do Pyaza</td>
-                        <td>239</td>
-                    </tr>
-                    <tr>
-                        <td>Tandoori Aaloo Masala</td>
-                        <td>189</td>
-                    </tr>
-                    <tr>
-                        <td>Tawa Mushroom Gravy</td>
-                        <td>239</td>
-                    </tr>
-                    <tr>
-                        <td>Veg Kolhapuri</td>
-                        <td>229</td>
-                    </tr>
-                    <tr>
-                        <td>Burnt Garlic Palak Paneer</td>
-                        <td>239</td>
-                    </tr>
-                    <tr>
-                        <td>Baby Corn Mushroom Masala</td>
-                        <td>229</td>
-                    </tr>
-                    <tr>
-                        <td>Adraki Aaloo</td>
-                        <td>195</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="innertabcontent" data-innertab-id="maingravyn">
-                <table>
-                    <tr>
-                        <th>ITEM</th>
-                        <th>PRICE (Half / Full)</th>
-                    </tr>
-                <tr>
-                    <td>Butter Chicken (Boneless) <br />- Shredded Chicken</td>
-                    <td>249</td>
-                </tr>
-                <tr>
-                    <td>Chicken Tikka Masala <br />(Boneless) </td>
-                    <td>249</td>
-                </tr>
-                <tr>
-                    <td>Chicken Bunna Gravy <br />(Boneless)</td>
-                    <td>249</td>
-                </tr>
-                <tr>
-                    <td>Chicken Kadhai Gravy <br />(Bone / Boneless)</td>
-                    <td>229 / 249</td>
-                </tr>
-                <tr>
-                    <td>Chicken Nawabi <br />(Boneless)</td>
-                    <td>259</td>
-                </tr>
-                <tr>
-                    <td>Chicken Baghdadi Gravy <br />(Bone / Boneless)</td>
-                    <td>229 / 249</td>
-                </tr>
-                <tr>
-                    <td>Roghani Chicken Tangadi<br />(3 Pcs.)</td>
-                    <td>279</td>
-                </tr>
-                <tr>
-                    <td>Nimbu Chicken <br />(Boneless)</td>
-                    <td>259</td>
-                </tr>
-                <tr>
-                    <td>Chicken Muglai <br />(Bone / Boneless)</td>
-                    <td>239 / 259</td>
-                </tr>
-                <tr>
-                    <td>Chicken Peshawari<br />(Boneless)</td>
-                    <td>259</td>
-                </tr>
-                <tr>
-                    <td>Gosht Khade Masala<br />(Mutton chunks cooked in whole spices with Yoghurt)</td>
-                    <td>320</td>
-                </tr>
-                <tr>
-                    <td>Methi Mutton <br />(Chef Special)</td>
-                    <td>320</td>
-                </tr>
-                <tr>
-                    <td>Mutton in Choice of Preparation<br />(Roghan Josh / Masala / Bhunna / Kadhai / Handi / Tawa)</td>
-                    <td>320</td>
-                </tr>
-                </table>
-            </div>
-        </div>
-        <div class="tabcontent" data-tab-id="fish">
-            <div class="heading">
-                <h>Fish / Prawns (Gravy</h>
-            </div>
-            <table>
-                <tr>
-                    <th>ITEM</th>
-                    <th>PRICE</th>
-                </tr>
-                <tr>
-                    <td>Fish in choice of Preparation <br /> (Goan Curry / Tikka Masala / Masala)</td>
-                    <td>270</td>
-                </tr>
-                <tr>
-                    <td>Prawns in choice of Preparation <br /> (Masala / Goan Curry / Kadai / Tikka) </td>
-                    <td>449</td>
-                </tr>
-            </table>
-        </div>
+    <section class="footer-container">
+        <h>&copy; Sardaarji Restaurant</h>
     </section>
     <script src="js/swiper.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/tabcontrols.js"></script>
+    <script src="js/sidenav.js"></script>
+    <script src="js/maps.js"></script>
+
 </body>
 
 </html>
