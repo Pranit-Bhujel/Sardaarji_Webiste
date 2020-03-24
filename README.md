@@ -4,7 +4,9 @@ This is the official website for an authentic Punjabi Restaurant. The website us
 
 The website includes: 
 - Home page
-- Location information of the restaurant across the nation.
+- Location information of the restaurant across the nation
 - Gallery
 - About Sardaarji
-- Meals they serve.
+- Meals they serve
+- Feedback form
+- Contact details
