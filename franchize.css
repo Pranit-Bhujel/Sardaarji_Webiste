@@ -1,0 +1,112 @@
+section.franchize-container {
+    width: 100%;
+    margin: 7em auto 0 auto;
+    padding: 3em 0 3em;
+    font-size: 1.2em;
+}
+
+.icon {
+    margin: 1em auto 1em auto;
+    display: block;
+}
+
+section.franchize-container h.gallery-title {
+    font-weight: bolder;
+    font-size: 1.4em;
+    color: black;
+    letter-spacing: 0.2em;
+    padding: 1em;
+}
+
+div.form-container {
+    margin: 0 auto 0 auto;
+    width: 80%;
+    box-shadow: -2px -1px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+div.form-container div.heading {
+    width: 100%;
+    margin: 0 auto 2em auto;
+    text-align: center;
+    padding: 1em 0 1em;
+    font-size: bolder;
+    font-size: 1.2em;
+    background-color: #a90303e8;
+    color: white;
+}
+
+div.form-container div.heading h {
+    padding: 1em;
+}
+
+div.form-container label,
+div.form-container input,
+div.form-container select,
+div.form-container textarea,
+div.form-container p {
+    display: block;
+    width: 80%;
+}
+
+div.form-container button {
+    width: 100%;
+    display: block;
+}
+
+div.form-container label {
+    margin: 1em auto 1em auto;
+    font-weight: bolder;
+}
+
+div.form-container input,
+div.form-container select,
+div.form-container textarea {
+    padding: 1.2em 0 1em 1.2em;
+    outline: none;
+    border: none;
+    margin: 0.5em auto 0.5em auto;
+    border: 0.4px solid black;
+}
+
+div.form-container textarea {
+    resize: none;
+    height: 8em;
+    outline: none;
+}
+
+div.form-container button {
+    outline: none;
+    margin: 5em auto 0 auto;
+    padding: 2em;
+    cursor: pointer;
+    border: none;
+    background-color: #a90303e8;
+    color: white;
+}
+
+@media only screen and (min-width: 1224px) {
+    section.responsive-container {
+        width: 1000px;
+    }
+    div.form-container {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1824px) {
+    section.responsive-container {
+        width: 1000px;
+    }
+    div.form-container {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    section.responsive-container {
+        width: 100%;
+    }
+    div.form-container {
+        width: 80%;
+    }
+}

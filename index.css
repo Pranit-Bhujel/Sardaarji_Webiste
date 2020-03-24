@@ -1,0 +1,251 @@
+section.intro-container {
+    width: 100%;
+    margin: 7em auto 0 auto;
+    padding: 3em 0 3em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+div.intro-content {
+    padding-top: 4em;
+    margin: -5em auto 0 auto;
+    width: 100%;
+    color: black;
+    background-color: white;
+}
+
+div.intro-content span.title {
+    text-decoration: none;
+    position: relative;
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+    font-size: 1.4em;
+}
+
+div.intro-content span {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+div.intro-content span.title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 1px solid red;
+    transition: 1s;
+    animation-name: underline;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes underline {
+    100% {
+        width: 100%;
+    }
+}
+
+div.intro-links {
+    padding: 1em 0 1em 0;
+}
+
+div.intro-links a {
+    padding: 1em;
+    background-color: black;
+    margin: 1em;
+    display: inline-block;
+    /*box-shadow: 0 0 2px 2px #888;*/
+    border-radius: 5px;
+}
+
+div.intro-links a:link,
+div.intro-links a:hover,
+div.intro-links a:active,
+div.intro-links a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+div.testimonials-container {
+    padding: 2em 0 2em 0;
+    width: 90%;
+    overflow: hidden;
+    margin: 2em auto 0 auto;
+    background-color: white;
+    color: black;
+    font-size: 0.9em;
+    box-shadow: -2px -1px 17px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+div.testimonials-container h {
+    font-weight: bolder;
+}
+
+div.testimonial {
+    padding: 1.5em 0 1.5em 0;
+}
+
+div.testimonial blockquote {
+    padding: 1em;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+section.branches-wrapper {
+    margin: 0 auto 0 auto;
+    width: 100%;
+}
+
+section.branches-container {
+    margin: 0 auto 2em auto;
+    padding: 2em 0 2em 0;
+    text-align: center;
+}
+
+.icon {
+    margin: 1em auto 1em auto;
+    display: block;
+}
+
+section.branches-container h.branches-title {
+    font-weight: bolder;
+    font-size: 1.4em;
+    color: black;
+    letter-spacing: 0.2em;
+    padding: 1em;
+}
+
+section.branches-container div.widget_wrap {
+    padding-top: 1em;
+}
+
+div.branches-swiper {
+    margin: 4em auto 0em auto;
+    width: 90%;
+}
+
+div.branches-swiper .swiper-slide {
+    width: 80%;
+    background-color: white;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+div.branches-swiper .swiper-slide div.branch-title {
+    text-align: center;
+    padding: 4em 0 1em 0;
+    background-color: rgb(154, 1, 1);
+    color: white;
+}
+
+div.branches-swiper .swiper-slide div.branch-title h {
+    font-size: 1.4em;
+}
+
+div.branches-swiper .swiper-slide div.branch-title p {
+    font-size: 1em;
+    letter-spacing: 0.2em;
+}
+
+div.branches-swiper .swiper-button-black {
+    opacity: 0.6;
+}
+
+div.branches-swiper .swiper-slide div.branch-description {
+    text-align: left;
+    padding: 2em 0 2em 0em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.branches-swiper .swiper-slide div.branch-description h {
+    font-weight: bolder;
+    margin-top: 1em;
+}
+
+div.branches-swiper .swiper-slide div.branch-description address {
+    font-style: normal;
+    margin-top: 1em;
+}
+
+div.branches-swiper .swiper-slide div.branch-description button {
+    padding: 1em;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 2px 2px #888;
+    display: block;
+}
+
+div.branches-swiper .swiper-slide div.branch-description a {
+    display: block;
+    margin-top: 1em;
+    color: green;
+    text-decoration: none;
+}
+
+div.branches-swiper .swiper-slide div.branch-description a:link,
+div.branches-swiper .swiper-slide div.branch-description a:hover,
+div.branches-swiper .swiper-slide div.branch-description a:visited,
+div.branches-swiper .swiper-slide div.branch-description a:active {
+    color: green;
+    text-decoration: none;
+}
+
+section.parallax {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    background-size: cover;
+}
+
+section.bg1 {
+    background-image: url("../images/parallax1.jpg");
+}
+
+section.bg2 {
+    background-image: url("../images/parallax2.jpg");
+}
+
+@media only screen and (min-width: 1224px) {
+    .responsive-container {
+        width: 1000px;
+    }
+    div.testimonials-container {
+        width: 1000px;
+    }
+    div.branches-swiper .swiper-slide {
+        width: 33.3%;
+    }
+}
+
+@media only screen and (min-width: 1824px) {
+    .responsive-container {
+        width: 1000px;
+    }
+    div.testimonials-container {
+        width: 1000px;
+    }
+    div.branches-swiper .swiper-slide {
+        width: 33.3%;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .responsive-container {
+        width: 100%;
+    }
+    div.testimonials-container {
+        width: 90%;
+    }
+}

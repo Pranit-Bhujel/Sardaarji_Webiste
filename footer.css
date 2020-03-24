@@ -1,0 +1,10 @@
+section.footer-container {
+    margin: 0em auto 0 auto;
+    width: 100%;
+    padding: 3em 0 3em 0;
+    text-align: center;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    background-color: #a90303e8;
+    color: white;
+}
