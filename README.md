@@ -1,12 +1,12 @@
 ## Sardaarji-Website
 
-This is the official website for an authentic Punjabi Restaurant. The website uses just an external js library called the swiper js.
+This is the official website for an authentic Punjabi food selling restaurant, **Sardaarji Restaurant.**
 
-The website includes: 
+The website includes the following: 
 - Home page
-- Location information of the restaurant across the nation
 - Gallery
 - About Sardaarji
 - Meals they serve
 - Feedback form
 - Contact details
+- Various Location information
